@@ -17,7 +17,7 @@ html{
     font-family: Quicksand, Arial, sans-serif;
 }
 .sections{
-    margin: 15% 15px;
+    margin: 10% 50px;
 }
 .container1{
     width: 80%;
@@ -63,12 +63,8 @@ html{
     position: relative;
     width: 100%;
     height: 100vh;
-    background: url("background.jpg") no-repeat center center; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    /* border: 2px solid black; */
+    background: url("images/bg.jpg") no-repeat center center; 
+     background-size: cover; 
     overflow: hidden;
 }
 
@@ -88,7 +84,7 @@ html{
     text-decoration: none;
     justify-content: center;
     border: 2px solid black; 
-    padding: 15px 6%;
+    padding: 15px 40px;
     margin: 15px 18px;
     color: black;
     background-color: transparent;
@@ -202,119 +198,44 @@ i{
     border: 3px solid #c78b09;
 }
 /*My Skills*/
-.container{
+.expertise {
+    background-color: #f8f8f8;
+    padding: 50px 0;
+}
+
+.expertise h2 {
+    color: #000000;
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.expertise .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.expertise .container .item {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.expertise .container .item h3 {
+    color: #e34c26;
+    font-size: 24px;
     margin-bottom: 10px;
 }
-.html, .css, .js, .python, .c{
-    position: relative;
-    width:100%;
-    height: 10px;
-    border: none;
-    z-index:9;
-    margin-bottom: 10px;
-    border-radius: 8px;
-    background-color: lightslategrey;
-}
-.html::after{
-    content: '';
-    background: #2c98f0;
-    right: 14%;
-    color: #3c98f0;
-    font-size: 18px;
-    font-weight: 600;
-}
-.html:after, .css:after, .js:after, .python:after, .c:after{
-    position: absolute;
-    height: 13px;
-    width: 13px;
-    border-radius: 10px;
-    float: right;
-    margin-top: -2px;
-}
-.html{
-    background:linear-gradient(to right, #2c98f0 85%, rgb(206, 205, 205) 15%);   
-}
-.css::after{
-    content: '';
-    background: #ec5453;
-    right: 24%;
-    color: #ec5453;
-    font-size: 18px;
-    font-weight: 600;
-}
 
-.css{
-    background:linear-gradient(to right, #ec5453 75%, rgb(206, 205, 205) 25%);   
+.expertise .container .item p {
+    color: #333333;
+    font-size: 16px;
 }
-.text3{
-    font-size: 16px; 
-    font-family: Quicksand, Arial, sans-serif; 
-    margin-bottom: 10px;
-    text-transform: uppercase;
-}
-.per, .per1, .per2, .per3, .per4{
-    float: right;
-    font-size: 15px;
-    font-weight: bold;
-}
-.per{
-    padding-right: 13%;
-    color: #3c98f0;
-}
-.per1{
-    padding-right: 24%;
-    color: #ec5453;
-}
-.per2{
-    padding-right: 44%;
-    color: #f9bf3f;
-}
-.per3{
-    padding-right: 34%;
-    color: #a84cb8;
-}
-.per4{
-    padding-right: 29%;
-    color: #2fa499;
-}
-.js::after{
-    content: '';
-    background: #f9bf3f;
-    right: 44%;
-    color: #f9bf3f;
-    font-size: 18px;
-    font-weight: 600;
-}
-
-.js{
-    background:linear-gradient(to right, #f9bf3f 55%, rgb(206, 205, 205) 45%);   
-}
-
-.python::after{
-    content: '';
-    background: #a84cb8;
-    right: 34%;
-    color: #a84cb8;
-    font-size: 18px;
-    font-weight: 600;
-}
-
-.python{
-    background:linear-gradient(to right, #a84cb8 65%, rgb(206, 205, 205) 35%);   
-}
-.c::after{
-    content: '';
-    background: #2fa499;
-    right: 29%;
-    color: #2fa499;
-    font-size: 18px;
-    font-weight: 600;
-}
-
-.c{
-    background:linear-gradient(to right, #2fa499 70%, rgb(206, 205, 205) 30%);   
-}
-
 /*Education Section*/
 .togglebtn, .togglebtn1, .togglebtn2, .togglebtn3{
     padding: 20px 15px;
@@ -425,9 +346,6 @@ button{
     transition: 0.3s;
 }
 button:hover{
-    background-color: rgba(36, 136, 230, 0.9);
+    background-color: #78bdfe;
+    color:gray;
 }
-/* textarea{
-    display: grid;
-    place-items: center;
-} */
