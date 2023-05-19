@@ -218,7 +218,11 @@ pursuing proficiency in remaining areas.</p>
                 <div class="contain"><i id="link" class="fas fa-phone"></i></div>
                 <div class="link"><a href="tel:+96181205125" class="info" style="color: #2488e6;" aria-disabled="true">+961 81 205 125</a></div>
             </div>
-            <form action= "contactform.php"  method="post"></form>
+            <br>
+            <p style="color:red;">I apologize for any inconvenience caused by the non-functioning form. Unfortunately, since Netlify does not support server-side processing, the form submission functionality may not work as expected.
+            <br>
+            To contact me, please use the phone number or email address provided above.</p>
+            <form action= ""  method="post">
                 <input type="text" name="name" placeholder="Name" class="name" required>
                 <input type="email" name="email" placeholder="Email" class="name" required>
                 <input type="text" name="subject" placeholder="Subject" required>
@@ -228,7 +232,47 @@ pursuing proficiency in remaining areas.</p>
               
         </section>
     </div>
+    <?php /*  netlify doesn't support server side php language
+    use PHPMailer\PHPMailer\PHPMailer;
+    use PHPMailer\PHPMailer\Exception;
+
+    require 'phpmailer/src/Exception.php';
+    require 'phpmailer/src/PHPMailer.php';
+    require 'phpmailer/src/SMTP.php';
+    if(isset($_POST['submit'])){
+        $name=$_POST['name'];
+        $visitor_email=$_POST['email'];
+        $subject=$_POST['subject'];
+        $message=$_POST['message'];
+        $mail=new PHPMailer();
+        $mail->isSMTP();
+        $mail->Host = 'rawan.jibawi4@gmail.com';
+        $mail->Port = 587;
+        $mail->SMTPSecure = 'tls';
+        $mail->SMTPAuth = true;
+        $mail->Username = 'rawan.jibawi4@gmail.com';
+        $mail->Password = 'kurlxvwkalymshqe';
+       
     
+        $email_form= 'rawan.jibawi4@gmail.com';
+        $email_subject= "New Form submission";
+        $name_var="You have recieved a new message from the user $name. Email address: $visitor_email. $subject. Here is the message: $message";
+   
+        $email_body= $name_var;
+        $to="rawan.jibawi4@gmail.com";
+        $headers= "From: $email_form\r\n";
+
+        if(mail($to, $email_subject, $email_body, $headers)){?>
+        <script>
+            aler("Thank you! Email Send successfully");
+            </script>
+        <?php
+        }else{
+            echo '<script>alert("try again");</script>';
+        }
+    }
+    */
+    ?>
     <script src="index.js"></script>
 </body>
 </html>
